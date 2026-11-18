@@ -2,10 +2,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  cursor: default;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #f6eee5;
+  z-index: 999;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .logo {
   display: flex;
+}
+
+.nav-item {
+  transition: transform 300ms ease-in-out;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
 }
 
 .logo-title-title {
@@ -41,6 +60,7 @@
   margin-bottom: 10px;
   font-family: "Playfair Display", serif;
   color: #302b29;
+  margin-left: 50px;
 }
 
 .hero-sub-title {
@@ -48,6 +68,7 @@
   width: 20%;
   margin-top: 0px;
   color: #776d67;
+  margin-left: 50px;
 }
 
 .catalog-button {
@@ -57,6 +78,7 @@
   padding: 10px 20px;
   color: white;
   font-size: 24px;
+  margin-left: 50px;
 }
 
 .catalog-button:hover {
@@ -64,23 +86,24 @@
   box-shadow: 0 6px 16px rgba(74, 81, 64, 0.35);
 }
 
-.catalog-title {
+.small-catalog-title {
   font-size: 32px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
-.catalog-line {
+.small-catalog-line {
   display: flex;
   gap: 60px;
 }
 
-.catalog-card img {
+.small-catalog-card img {
   border-radius: 15px;
   transition: transform 300ms ease-in-out;
 }
 
-.catalog-card img:hover {
+.small-catalog-card img:hover {
   transform: translateY(-10px);
+  transform: scale(1.1);
 }
 
 .catalog-price {
@@ -167,6 +190,10 @@
   box-shadow: 0 6px 16px rgba(74, 81, 64, 0.35);
 }
 
+.arrow:hover {
+  transform: scaley(-10);
+}
+
 @media (max-width: 768px) {
   .hero-title {
     font-size: 48px;
@@ -181,6 +208,10 @@
     width: 40%;
     margin-top: 0px;
     color: #776d67;
+  }
+
+  .catalog-button {
+    font-size: 16px;
   }
 
   .catalog-line {
@@ -228,6 +259,6 @@
   }
 
   .more-button {
-    width: 60%;
+    width: 65%;
   }
 }

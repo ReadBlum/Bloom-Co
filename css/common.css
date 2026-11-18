@@ -3,6 +3,19 @@ a {
   text-decoration: none;
 }
 
+button {
+  appearance: none;
+  -webkit-appearance: none; /* Для Safari и старых версий Chrome */
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit; /* Наследует шрифт, размер и межстрочный интервал от родителя */
+  color: inherit; /* Наследует цвет текста от родителя */
+  cursor: pointer;
+  outline: none; /* Убирает стандартную рамку фокуса (см. примечание ниже) */
+}
+
 body {
   background-color: #f6eee5;
 }
@@ -24,5 +37,66 @@ p {
   .container {
     margin-left: 20px;
     margin-right: 20px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: default;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #f6eee5;
+  z-index: 999;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.logo {
+  display: flex;
+}
+
+.nav-item {
+  transition: transform 300ms ease-in-out;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+}
+
+.logo-title-title {
+  margin-bottom: 0px;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+}
+
+.logo-title-sub-title {
+  margin-top: 4px;
+  font-size: 10px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 60px;
+}
+
+.current-page {
+  color: #626b50;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
