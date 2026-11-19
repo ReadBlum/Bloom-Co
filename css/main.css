@@ -94,11 +94,13 @@ header {
 .small-catalog-line {
   display: flex;
   gap: 60px;
+  flex-direction: column;
 }
 
 .small-catalog-card img {
   border-radius: 15px;
   transition: transform 300ms ease-in-out;
+  width: 320px;
 }
 
 .small-catalog-card img:hover {
