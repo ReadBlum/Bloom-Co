@@ -72,18 +72,23 @@ header {
 }
 
 .catalog-button {
-  margin-top: 100px;
-  background-color: #626b50;
+  display: inline-block;
+  margin-top: 25px;
+  border: #626b50 solid 2px;
+  color: #626b50;
   border-radius: 40px;
   padding: 10px 20px;
-  color: white;
   font-size: 24px;
-  margin-left: 50px;
+  margin-left: 30px;
+  cursor: pointer;
+  transition:
+    background-color 300ms ease-in-out,
+    color 300ms ease-in-out;
 }
 
 .catalog-button:hover {
-  background-color: #4a5140;
-  box-shadow: 0 6px 16px rgba(74, 81, 64, 0.35);
+  background-color: #626b50;
+  color: white;
 }
 
 .small-catalog-title {
@@ -212,11 +217,11 @@ header {
     font-size: 16px;
   }
 
-  .catalog-line {
+  .small-catalog-line {
     flex-direction: column;
   }
 
-  .catalog-card img {
+  .small-catalog-card img {
     width: 325px;
   }
 
@@ -258,5 +263,12 @@ header {
 
   .more-button {
     width: 65%;
+  }
+
+  .about-us-img {
+    border-top-right-radius: 0px;
+
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
 }
