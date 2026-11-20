@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,410..900;1,410..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/link.css" />
+    <title>Bloom&Co</title>
+  </head>
+  <body>
+    <header>
+      <div class="header container">
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="./images/logo.png" alt="Logo" width="75"
+          /></a>
+          <div class="logo-title">
+            <p class="logo-title-title">Bloom&Co</p>
+            <p class="logo-title-sub-title">квіти з любов'ю</p>
+          </div>
+        </div>
+
+        <div class="nav">
+          <nav class="nav-list">
+            <a href="./catalog.html" class="nav-item">Каталог</a>
+            <a href="./about-us.html" class="nav-item">Про нас</a>
+            <a href="./delivery.html" class="nav-item">Доставка</a>
+            <a href="./contacts.html" class="nav-item current-page">Контакти</a>
+          </nav>
+        </div>
+
+        <a href="tel:380991234567" class="nav-item">+380 (99) 123-45-67</a>
+      </div>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="contacts-hero container">
+          <div class="contacts-hero-titles">
+            <p class="contacts-hero-upper-title">Головна / Контакти</p>
+            <h1 class="contacts-hero-title">Контакти</h1>
+            <p class="contacts-hero-sub-title">
+              З радістю відповімо на ваші запитання, допоможемо з вибором букета
+              та оформленням замолвення.
+            </p>
+          </div>
+          <img
+            src="./images/contacts-hero.png"
+            alt="contacts hero img"
+            class="contacts-hero-img"
+            width="700px"
+          />
+
+          <a href="#" class="contacts-hero-button">Написати нам ➡︎</a>
+        </div>
+      </section>
+
+      <section id="contacts">
+        <div class="contacts container">
+          <img
+            src="./images/contacts.png"
+            alt="contacts img"
+            width="600"
+            class="contacts-img"
+          />
+          <div class="contacts-titles">
+            <h1 class="contacts-title">Зв'яжіться з нами</h1>
+            <p class="contacts-sub-title">
+              Маєте запитання чи особливе побажання? Заповніть форму, і ми
+              відправимо найближчим часом.
+            </p>
+
+            <form class="contacts-form">
+              <div class="contacts-first-line">
+                <input
+                  type="text"
+                  placeholder="Ваше ім'я"
+                  class="contact-input"
+                />
+                <input type="email" placeholder="Email" class="contact-input" />
+              </div>
+              <textarea
+                name="ur-message"
+                class="contacts-textarea"
+                placeholder="Ваше повідомлення"
+              ></textarea>
+            </form>
+
+            <button type="submit" class="contacts-submit-button">
+              Надіслати повідомлення
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
