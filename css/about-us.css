@@ -9,6 +9,7 @@
 
 .about-us-hero-img {
   border-radius: 40px;
+  object-fit: cover;
 }
 
 .about-us-hero-upper-title {
